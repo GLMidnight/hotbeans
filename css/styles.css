@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5ef !important;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #572a17;
+}
+i {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #572a17;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #572a17;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #572a17 !important;
+}
+    .logo {
+    float: left; /* logo at the left of the page */
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+#confirmationMessage {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-family: Arial;
+}
+
+.p1 {
+    font-family: Arial;
+    float: left;
+}
+
+.p2 {
+    font-family: Arial;
+    float: center;
+}
+
+/* ~~ Top Navigation Bar ~~ */
+
+@media screen and (min-width: 768px) {
+    #navigation-container {
+        width: 62.5vw;
+        margin: 0 auto;
+        height: 7vh;
+    }
+}
+
+.navigation-bar {
+    background-color: #f5f5ef;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+}
+@media screen and (min-width: 360px) {
+    .navigation-bar img {
+        float: left;
+    }
+}
+
+    .navigation-bar ul {
+        padding: 0px;
+        margin: 0px;
+        text-align: center; /* makes a list of buttons, without this the buttons wont work. VERY IMPORTANT!! */
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .navigation-bar li {
+        list-style-type: none;
+        padding: 0px;
+        height: 24vh; /* buttons */
+        margin-top: 4px;
+        margin-bottom: 4px;
+        display: inline;
+    }
+
+        .navigation-bar li a {
+            color: #572a17;
+            font-size: 16px;
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; /* for the active button */
+            text-decoration: none;
+            line-height: 70px;
+            padding: 5px 15px;
+            opacity: 0.7;
+        }
+
+            .navigation-bar li a:hover:not(.active) {
+                background-color: #7b7b78;
+                color: white;
+            }
+
+    .active {
+        background-color: #c5c5c1;
+        color: #c31e00 !important; /* these two lines are active colours, so if you're on the homepage then the home button will be highlighted. */
+    }
+
+    #menu {
+        float: right;
+    }
+    /* Container holding the image and the text */
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+
+    .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+    }
+
+    .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font: Arial !important;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .text {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-top: 20%;
+        float: left;
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .image {
+        position: relative;
+    }
+
+        .image figcaption {
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            left: 40%;
+        }
+
+    .employee-box {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+        .employee-box img {
+            max-width: 100%; /* Set the maximum width to 100% of its container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Apply border-radius if needed */
+            margin-bottom: 10px;
+        }
+
+    .employee-info h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .employee-info p {
+        font-size: 16px;
+    }
+
+    @media only screen and (max-width: 100px) {
+        .employee-box img {
+            max-width: 100%; /* Set the maximum width to 100% of its container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Apply border-radius if needed */
+            margin-bottom: 10px;
+        }
+
+        .employee-info h2 {
+            font-size: 16px;
+        }
+
+        .employee-info p {
+            font-size: 14px;
+        }
+    }
+
+    .link-container {
+        display: flex;
+    }
+
+        .link-container a {
+            text-align: center; /* Centers text below images */
+            margin: 0 10px; /* Optional: Adds space around each link */
+            text-decoration: none; /* Removes underline from links */
+            color: inherit; /* Ensures text color is inherited */
+        }
+
+        .link-container img {
+            max-width: 200px; /* Adjust as needed */
+            height: 60px; /* Maintains aspect ratio */
+        }
